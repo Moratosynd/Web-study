@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>반응형 웹</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale1.0,user-scalable=no">
+    <style>
+    /* 모든 Device를 위한 공통 로드 */
+
+    .cLayer{
+        
+        padding : 1.0em;
+    }
+    /* 모바일 Device : 0 ~ 640 */
+    @media screen and (max-width: 640px){
+
+        html{
+            background: red;
+
+        }
+        .cLayer{
+            padding: 1.0em;
+        }
+
+    }
+
+    /* Tablet Device : 641 ~ 768 */
+    @media screen and (min-width:641px){
+
+        html{
+            background: green;
+
+        }
+        .cLayer{
+            padding: 3.0em;
+        }
+
+    }
+
+    /* Desktop Device : 1024 이상 */
+    @media screen and (min-width:1024px){
+
+        html{
+            background: blue;
+
+        }
+        .cLayer{
+            padding: 6.0em;
+        }
+
+    }
+    </style>
+</head>
+<body>
+    <div class="cLayer" style="background-color:#ff6666">메뉴1</div>
+    <div class="cLayer" style="background-color:#ffcc33">메뉴2</div>
+    <div class="cLayer" style="background-color:#ffff00">메뉴3</div>
+    <div class="cLayer" style="background-color:#33ff66">메뉴4</div>
+</body>
+</html>

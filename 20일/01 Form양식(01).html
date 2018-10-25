@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD Xhtml 1.0 Transitional//EN"
+"http://wwww.w3.org/TR/xhtml1/DTDxhtml1-transitional.dtd">
+<html xmlns="http://wwww.w3.org/1999/xhtml" xml:lang=:"ko" lang="ko">
+
+<head>
+  <script type="text/javascript">
+  function namePRT()
+  {
+    var e0, e1, e2;
+    e0 = document.form1. elements[0].name;
+    e1 = document.form1. elements[1].name;
+    e2 = document.form1. elements[2].name;
+    document.write("각 양식의 이름들 <br />"+ e0 + " " +e1 + " " +e2);
+  }
+
+  </script>
+</head>
+<form name="form1">
+  form 객체 예제<br />
+  각 양식의 이름을 출력합니다.<br /><br />
+Email : <input type="text" name="email">  <br /><br />
+ID : <input type="text" name="id" /><br /><br />
+Password : <input type="password" name="pw" /><br />
+<input type="button" value="이름확인" onclick="namePRT();" />
+</form>
+</body>
+</html>

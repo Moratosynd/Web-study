@@ -1,0 +1,56 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-size: 20px;
+  font-family: "돋음"
+  color:#444444;
+}
+.clear{
+  clear: both;
+}
+
+#page {
+    margin:0 auto;
+    width: 1000px;
+}
+
+header{
+  border: solid 1px #eeeeee;
+  width: 1000px;
+  height: 100px;
+}
+
+header #img{
+  float: left;
+}
+
+ul{ list-style-type: none;}
+
+#menu{
+   font-size: 10px;
+   float: right;
+}
+
+#menu li{
+   display: inline;
+   }
+
+   nav{
+     border: solid 1px #eeeeee;
+     width: 200px;
+     height: 500px;
+   }
+
+   #login_box{
+     border-radius: 20px 20px;
+     border: solid 1px #eeeeee;
+     width: 200px;
+     height: 150px;
+   }
+   .img{
+    margin-left: 10px;
+    display: inline;
+  }

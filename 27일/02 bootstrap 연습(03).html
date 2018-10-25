@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="user-scelable=no, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <title>부트스트랩 연습 01</title>
+    <style>
+      h2 { margin: 20px 0}
+      button.btn { margin-left: 10px; float: left;}
+      .inner { margin: 200px auto; width: 70%}
+    </style>
+  </head>
+  <body>
+<div class="container">
+  <h2>버튼 메소드</h2>
+  <h4> .button('toggle') 메소드 예제</h4>
+  <div id="myButtons1" class="bs-example">
+    <button type="button" class="btn btn-primary">버튼</button>
+  </div>
+  <div class="clearfix"></div>
+  <h4> .button('loading') 메소드 예제</h4>
+  <div id="myButtons2" class="bs-example">
+    <button type="button" class="btn btn-primary" data-loading-text="로딩 중...">버튼</button>
+  </div>
+  <div class="clearfix"></div>
+  <h4> .button('reset') 메소드 예제</h4>
+  <div id="myButtons3" class="bs-example">
+    <button type="button" class="btn btn-primary" data-loading-text="로딩 중...">버튼</button>
+  <div class="clearfix"></div>
+
+  <h4> .button(string) 메소드 예제</h4>
+    <button type="button" class="btn btn-primary" id="myButton4" data-complete-text="로딩 끝">
+    여기를 누르세요.</button>
+  </div>
+  <script type="text/javascript">
+    $("#myButtons1 .btn").click(function(){
+      $(this).button('toggle');
+    });
+    $("#myButtons2 .btn").click(function(){
+      $(this).button('loading').delay(1000).queue(function(){
+      });
+    });
+      $("#myButtons3 .btn").click(function(){
+        $(this).button('loading').delay(1000).queue(function(){
+          $(this).button('reset');
+        });
+      });
+        $("#myButton4").click(function(){
+          $(this).button('loading').delay(1000).queue(function(){
+            $(this).button('complete');
+          });
+    });
+  </script></div>
+  </body>
+</html>

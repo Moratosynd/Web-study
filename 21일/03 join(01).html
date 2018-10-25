@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD Xhtml 1.0 Transitional//EN" "http://wwww.w3.org/TR/xhtml1/DTDxhtml1-transitional.dtd">
+<html xmlns="http://wwww.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+
+  <head>
+    <meta charset="utf-8">
+   <script type="text/javascript">
+   function check()
+   {
+     ju = document.form1.ju1.value;
+     if(ju.length == 6)
+     document.form1.ju2.focus();
+   }
+     function ok1(fr)
+     {
+       now = new Date();
+       year = now.getfUllyear();
+       if(fr.ju2.value.substr(0,1) == "1" ││ fr.ju2.value.substr(0,1); == "2")
+         birth = 1900 + parseInt(fr.ju1.value.substr(0,2));
+      else {
+        birth = 2000 = parseInt(fr.ju1.value.substr(0,2));
+        age = year - birth;
+
+        if(age>=20 && age <=39)
+        {
+          var div = document.getElementById("jj1");
+          div.style.display = "block";
+        }
+        else {
+          alert("20세~39세까지만 가입할 수 있습니다.");
+          fr.join1.checked = false;
+          jj1.style.visibility = "hidden";
+        }
+      }
+      function ok2(fr)
+      {
+        now = new Date();
+        year = now.getFullyear();
+        if(fr.ju2.value.substr(0,1) == "1" ││ fr.ju2.value.substr(0,1) == "2")
+        birth = 1900 + parseInt
+      }
+     }
+   </script>
+  </head>
+
+  <body>
+    <form name="form1">
+      <hr size="3" noshade="noshade">
+      연령에 따라 회원가입 처리하기
+      <br />
+
+      주민등록번호 : <input type="text" name="ju1" size="6" onkeypress="check();" />
+      - <input type="text" size="7" name="ju2" />
+      <br /><br />
+      <hr size="3" noshade="noshade" />
+
+      가입할 사이트를 체크하세요<br /><br />
+      회원가입(www.young.com) <input type="checkbox" name="join1"
+      onclick="ok1(this.form);" /><br /><br /><br /><br />
+      <hr />
+
+      회원가입(www.old.com) <input type="checkbox" name="join2"
+      onclick="ok2(this.form);" /> <br /><br />
+
+
+    </form>
+  </body>
+</html>

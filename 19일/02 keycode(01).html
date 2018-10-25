@@ -1,0 +1,31 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+  //<![CDATA[
+  function checkKey()
+  {
+    if(event.keyCode == 13)
+    {
+      alert("로그인 하시겠습니까?");
+    }
+  }
+  //]]>
+  </script>
+  <!--
+  <참고> 결과가 다를 경우
+  웹브라우저가 W3C 권고 주석인 //<![CDATA[ ~ //]]>를 처리하지 못할 경우,
+  //<![CDATA[ ~ //]]를 제외한다
+  -->
+</head>
+
+<body>
+  <form name="form1">
+    event객체 예제<br /><br />
+    Email    : <input type="text" id="email" /><br />
+    ID       : <input type="text" id="id" ><br />
+    Password : <input type="password" id="pw" onKeypress="checkKey();" /><br /><br />
+    <input type="button" value="확인" />
+  </form>
+</body>
+</html>

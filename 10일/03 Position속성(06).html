@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>z-index</title>
+    <style media="screen">
+      #absolute1, #absolute2, #absolute3, #absolute4{
+        width: 100px;
+        height: 100px;
+        left:  0px;
+        position: absolute;
+      }
+      #absolute1{
+        background-color: #ffd9fa;
+        top: 0px;
+        left: 0px;
+        z-index: 4;
+      }
+     #absolute2{
+       background-color: #ffb2f5;
+       top: 0px;
+       left: 30px;
+       z-index: 3;
+     }
+     #absolute3{
+       background-color: #f361dc;
+       top: 0px;
+       left: 60px;
+       z-index: 2;
+     }
+     #absolute4{
+       background-color: #d941c5;
+       top: 0px;
+       left: 90px;
+       z-index: 1;
+     }
+    </style>
+  </head>
+  <body>
+    <div id="absolute1">
+      1.absolute
+    </div>
+    <div id="absolute2">
+      2.absolute
+    </div>
+    <div id="absolute3">
+      3.absolute
+    </div>
+    <div id="absolute4">
+      4.absolute
+    </div>
+  </body>
+</html>

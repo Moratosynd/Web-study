@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD Xhtml 1.0 Transitional//EN"
+"http://wwww.w3.org/TR/xhtml1/DTDxhtml1-transitional.dtd">
+<html xmlns="http://wwww.w3.org/1999/xhtml" xml:lang=:"ko" lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+  function Age()
+  {
+    var today = new Date ();
+    var c_year = today.getFullYear()
+    var year = document.form1.b_year.value;
+    document.form1.age.value = c_year - year;
+  }
+  </script>
+</head>
+
+<body>
+  <form name="form1">
+     나이를 자동으로 계산하는 예제<br /><br />
+     출생년도 : <input type="text" name = "b_year" onblur="Age();" /><br />
+     나이: <input type="text" name="age" />
+   </form>
+ </body>
+ </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>float 2</title>
+    <style>
+    div {
+        border: 1px solid #CCC;
+    }
+    .wrapper {
+        width: 500px;
+        margin: 0 auto;
+        border-color: red;
+        /*자식요소가 float 속성을 가지게 되면, 부모요소는 가로폭 안에 위치를 강요하지만 면적은 공유하지 않는다*/
+        overflow: hidden;
+        /*float를 가지는 자식요소와 부모요소가 면적을 공유함*/
+    }
+    .left {
+        float: left;
+        width: 100px;
+        height: 300px;
+    }
+    .right {
+        float: right;
+        width: 380px;
+    }
+    .foot {
+        border-color: green;
+        /*직전요소가 float를 가지면 다음 요소가 영향을 받는다*/
+        /*박스는 블록타입이기 때문에 영역이 왼쪽과 오른쪽에 붙어 공간을 만들며,
+        그 안의 컨텐츠는 float를 가지는 속성과 자연스레 어울러진다*/
+        clear: both;
+        /*foot 텍스트가 앞의 요소의 영향을 벗어나게 해준다*/
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>FLOAT TEST</h1>
+        <div class="left">
+            <h2>LEFT</h2>
+        </div>
+        <div class="right">
+            <h2>RIGHT</h2>
+        </div>
+        <div class="foot">
+            FOOT
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD Xhtml 1.0 Transitional//EN"
+"http://wwww.w3.org/TR/xhtml1/DTDxhtml1-transitional.dtd">
+<html xmlns="http://wwww.w3.org/1999/xhtml" xml:lang=:"ko" lang="ko">
+<head>
+  <script type="text/javascript">
+  //<![CDATA[
+  function check()
+  {
+    if(document.member.id.value=="")
+     alert("아이디를 입력하세요");
+  }
+  //]]>
+  </script>
+  <!--
+  <참고> 결과가 다를 경우
+  웹 브라우저가 W3C 권고 주석인 //<![CDATA[ ~ //]]>를 처리하지 못할 결우,
+  //<![CDATA[ ~ //]]>를 제외한다.
+-->
+</head>
+
+<body>
+<pre>
+  <form id="number" >
+    ID       <input type="text id="id onFocus="alert('4글자이상 아이디를 입력하세요')">
+    password <input type="password" id="id" />
+  </form>
+</pre>
+</body>
+
+<html>

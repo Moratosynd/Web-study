@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD Xhtml 1.0 Transitional//EN"
+"http://wwww.w3.org/TR/xhtml1/DTDxhtml1-transitional.dtd">
+<html xmlns="http://wwww.w3.org/1999/xhtml" xml:lang=:"ko" lang="ko">
+
+  <head>
+    <meta charset="utf-8">
+  <script>
+    //<![CDATA[
+    function imgChange(num)
+    {
+      document.images[0].src = "naver"+0+".png";
+    }
+    //]]>
+  </script>
+    <!--
+    <참고> 결과가 다를 경우
+    웹브라우저가 W3C 권고 주석인 //<![CDATA[ ~ //]]>를 처리하지 못할 경우,
+    //<![CDATA[ ~ //]]를 제외한다
+    -->
+  </head>
+
+  <body>
+  <p>
+    image객체 예제<br />
+
+    그림위에 마우스를 올리면 다른 이미지로 변경된다.<br /><br />
+    &nbsp;  &nbsp;  &nbsp;  &nbsp;
+    <image src="daum0.png" onmouseover="imgChange(1);"
+    onmouseout="imgChange(0);"/>
+  </p>
+  </body>
+</html>

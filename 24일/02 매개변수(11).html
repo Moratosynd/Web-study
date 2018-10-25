@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+      $(document).ready(function () {
+          $('#all-check').change(function () {
+             if (this.checked) {
+               $('#check-item').children().prop('checked', true);
+             } else {
+                $('#check-item').children().prop('checked', false);
+             }
+          });
+     });
+    </script>
+  </head>
+  <body>
+     <input type="checkbox" id="all-check" />
+     <label>ALL</label>
+     <div id="check-item">
+         <input type="checkbox" />
+         <label>A Option</label>
+         <input type="checkbox" />
+         <label>B Option</label>
+         <input type="checkbox" />
+         <label>C Option</label>
+       </div>
+   </body>
+</html>
